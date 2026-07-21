@@ -1,0 +1,17 @@
+h1 {
+  text-align: left;
+  color: rgb(255, 98, 0);
+}
+
+a {
+  color: green;
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}
+​ #my_name {
+  color: red;
+}

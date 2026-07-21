@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="../assets/scripts.js"></script>
+
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <title>Calvins Site</title>
+  </head>
+  <body id="page">
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="week1.html">Week 1</a>
+      <a href="week2.html">Week 2</a>
+      <a href="about_me.html">About</a>
+      <a href="wiki.html">Wiki</a>
+    </nav>
+
+    <div id="top">
+      <h1>Week 2 Page</h1>
+
+      <hr />
+    </div>
+
+    <div id="middle">
+      <h3>This weeks topics</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div id="bottom">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/h3uBr0CCm58?si=b3WjBfDJFv6VFLo_&amp;controls=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div>
+      <h1 id="title">DOM model example</h1>
+      <p id="content">hello world</p>
+      <button onClick="changeMeToRed()">Red</button>
+      <button onClick="changeMeToBlue()">Blue</button>
+      <button onClick="changeMeToGreen()">Green</button>
+      <button onClick="lightMode()">Lightmode</button>
+      <button onClick="darkMode()">Darkmode</button>
+      <button onClick="toggleDarkmode()" id="toggle_button">Darkmode</button>
+    </div>
+
+    <div>
+      <h1>Form example</h1>
+      <hr />
+      <form onSubmit="runForm()">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" /><br />
+        <label for="password_field">Password:</label>
+        <input type="password" id="password_field" /><br />
+
+        <label for="A">A</label>
+        <input id="A" type="radio" name="grouping_alpha" /><br />
+
+        <label for="B">B</label>
+        <input id="B" type="radio" name="grouping_alpha" /><br />
+
+        <label for="C">C</label>
+        <input id="C" type="radio" name="grouping_alpha" /><br />
+
+        <label for="D">D</label>
+        <input id="D" type="radio" name="grouping_alpha" /><br />
+
+        <label for="lettuce">Lettuce</label>
+        <input id="lettuce" type="checkbox" name="burger_toppings" /><br />
+
+        <label for="lettuce">Tomato</label>
+        <input id="tomato" type="checkbox" name="burger_toppings" /><br />
+
+        <label for="lettuce">Onion</label>
+        <input id="onion" type="checkbox" name="burger_toppings" /><br />
+
+        <hr />
+        <button type="submit">Submit</button>
+      </form>
+
+      <h3>Activity 2 and 3</h3>
+      <form onSubmit="runForm2()">
+        <label for="first_name_field">First Name:</label>
+        <input type="text" id="first_name_field" /><br />
+        <label for="lastname_field">Last Name:</label>
+        <input type="text" id="lastname_field" /><br />
+        <label for="email_field">Email:</label>
+        <input type="email" id="email_field" /><br />
+
+        <label for="grouping_age_range">Age range:</label><br />
+        <label for="16">16-17</label>
+        <input value="1" id="16" type="radio" name="grouping_age_range" /><br />
+        <label for="18">18-20</label>
+        <input value="2" id="18" type="radio" name="grouping_age_range" /><br />
+        <label for="21">21-22</label>
+        <input value="3" id="21" type="radio" name="grouping_age_range" /><br />
+        <label for="23">23+</label>
+        <input value="4" id="23" type="radio" name="grouping_age_range" /><br />
+
+        <hr />
+        <button type="submit">Submit</button>
+      </form>
+
+      <div>
+        <h3>Activity 4</h3>
+        <img
+          src="https://media.giphy.com/media/xS02DRItBt7aM/giphy.gif"
+          alt="GIF of him saying nice"
+          id="meme"
+        />
+        <br />
+
+        <label for="hide_gif">Show gif</label>
+        <input
+          checked
+          autocomplete="off"
+          id="hide_gif"
+          type="checkbox"
+          onclick="hideGif()"
+        /><br />
+      </div>
+
+      <h3>Blog Activity</h3>
+      <form id="blog_form">
+        <label for="name_field">Name:</label>
+        <input type="text" id="name_field" /><br />
+
+        <label for="blog_name_field">Blog Name:</label>
+        <input type="text" id="blog_name_field" /><br />
+
+        <label for="blog_body_field">Content:</label>
+        <textarea id="blog_body_field"></textarea><br />
+
+        <hr />
+        <button onClick="runForm3()" type="button">Submit</button>
+      </form>
+    </div>
+
+    <div id="blog"></div>
+  </body>
+</html>
