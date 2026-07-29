@@ -21,6 +21,17 @@ jobs:
           ssh -o StrictHostKeyChecking=no \
           ${{ secrets.VM_USER }}@${{ secrets.VM_HOST }} '
             cd ~/projects/nginx_webpage &&
-            git fetch origin &&
+            git fetch origin
             git reset --hard origin/master
+
+            if podman container exists nginx_webpage; then
+                podman start nginx_webpage || true
+            else
+                podman run -d \
+                --name nginx_webpage
+                --restart=always \
+                -p 8080:80 \
+                -v ~/projects/nginx_webpage:/usr/share/nginx/html:ro \
+                docker.io/library/nginx:alpine
+            fi
           '
