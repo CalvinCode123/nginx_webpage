@@ -22,5 +22,5 @@ jobs:
           ${{ secrets.VM_USER }}@${{ secrets.VM_HOST }} '
             cd ~/projects/nginx_webpage &&
             git fetch origin &&
-            git reset --hard origin/main
+            git reset --hard origin/master
           '
